@@ -10,3 +10,18 @@ Demonstrate how to:
     Take note of what information is lost when some conversions take place.
 
 '''
+
+x = 66
+y = 43.62
+
+print(float(x))  # to float
+
+print(int(y))  # to int
+
+print(x // y)  # floor division
+
+var1 = int(input("Enter the first number: "))
+
+var2 = int(input("Enter the first number: "))
+
+print(var1 * var2)  # mulitplication with user inputs
