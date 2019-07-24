@@ -7,3 +7,14 @@ Example input: 1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+
+sample = []
+
+
+for i in range(10):
+    num = input("Enter a number: ")
+    sample.append(num)
+
+
+
+print(sample[1:len(sample):2], sample[::-1][1:len(sample):2]) 
