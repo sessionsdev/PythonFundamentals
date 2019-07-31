@@ -5,3 +5,9 @@ input_dict = {"item1": 5, "item2": 6, "item3": 1}
 result_list = [("item3", 1), ("item1", 5), ("item2", 6)]
 
 '''
+
+input_dict = {"item1": 5, "item2": 6, "item3": 1}
+
+result_list = [(x, y) for x, y in input_dict.items()]
+
+print(result_list)
