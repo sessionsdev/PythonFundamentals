@@ -18,3 +18,24 @@ Cars, animals, poker games, sports teams, trees, beers, people etc...
 
 
 '''
+
+class Beer:
+    def __init__(self, style, abv, origin):
+        self.style = style
+        self.abv = abv
+        self.origin = origin
+
+
+class Dog:
+    def __init__(self, breed, weight, color):
+        self.breed = breed
+        self.weight = weight
+        self.color = color
+
+
+class Drill:
+    def __init__(self, diameter, length, material, machine):
+        self.diamter = diameter
+        self.length = length
+        self.material = material
+        self.machine = machine

@@ -9,4 +9,14 @@ Use a loop to print the following table to the console:
 
 '''
 
-table = []
+my_string = ""
+
+
+
+for i in range(50):
+    if (i) % 10 == 0:
+        my_string += "\n"
+    my_string += (str(i) + " ")
+
+print(my_string)
+
