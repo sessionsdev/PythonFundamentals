@@ -20,22 +20,32 @@ Cars, animals, poker games, sports teams, trees, beers, people etc...
 '''
 
 class Beer:
-    def __init__(self, style, abv, origin):
+    def __init__(self, style = "IPA", abv = 5, origin = "California"):
         self.style = style
         self.abv = abv
         self.origin = origin
 
+    def __str__(self):
+        return (f"This beer is an {self.style} with an ABV of {self.abv}% from {self.origin}")
+
+
+
 
 class Dog:
-    def __init__(self, breed, weight, color):
+    def __init__(self, breed = "Poodle", weight = "35", color = "White"):
         self.breed = breed
         self.weight = weight
         self.color = color
 
 
+
+        
+
 class Drill:
-    def __init__(self, diameter, length, material, machine):
+    def __init__(self, diameter = 1, length = 12, material = "Concrete", machine = "SDS+"):
         self.diamter = diameter
         self.length = length
         self.material = material
         self.machine = machine
+
+

@@ -32,3 +32,5 @@ cir = Circle(6)
 
 print(rec.calc_area())
 print(cir.calc_area())
+
+dir(str)
