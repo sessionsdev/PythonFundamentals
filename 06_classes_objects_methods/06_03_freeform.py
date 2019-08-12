@@ -31,11 +31,19 @@ class Beer:
 
 
 
+
 class Dog:
     def __init__(self, breed = "Poodle", weight = "35", color = "White"):
         self.breed = breed
         self.weight = weight
         self.color = color
+
+    def __str__(self):
+        return (f"This dog is a {self.color} {self.breed} and it weighs {self.weight} lbs!")
+
+    def __add__(self):
+        pass
+    
 
 
 
@@ -43,9 +51,12 @@ class Dog:
 
 class Drill:
     def __init__(self, diameter = 1, length = 12, material = "Concrete", machine = "SDS+"):
-        self.diamter = diameter
+        self.diameter = diameter
         self.length = length
         self.material = material
         self.machine = machine
+
+    def __str__(self):
+        return (f"This is a {self.diameter} by {self.length} drill for {self.material}.  Use a {self.machine} machine!")
 
 

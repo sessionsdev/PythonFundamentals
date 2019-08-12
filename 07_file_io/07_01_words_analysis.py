@@ -7,7 +7,7 @@ Write a script that reads in the words from the words.txt file and finds and pri
 
 
 '''
-file = 'words.txt'
+file = '/home/jonathan/Documents/CodingNomads/Labs/python_fundamentals/07_file_io/words.txt'
 with open(file, encoding='utf-8') as words:
     contents = words.read()
     words = contents.split() # creates a list

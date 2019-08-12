@@ -16,3 +16,23 @@ your own for this exercise but if you are stuck, some ideas include:
 - A Restaurant superclass, with Gourmet and FastFood subclasses.
 
 '''
+
+class Vehicle:
+    def __init__(self, color, max_speed):
+        self.color = color
+        self.max_speed = max_speed
+
+class Motorcycle(Vehicle):
+    def __init__(self, color, max_speed, model):
+        super().__init__(color, max_speed)
+        self.model = model
+
+class Harley(Motorcycle):
+    def __init__(self, color, max_speed, model, style):
+        super().__init__(color, max_speed, model)
+        self.style = style
+
+
+bike = Harley("black", 75, "harley", "Chopper")
+
+print(bike.color)
