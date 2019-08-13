@@ -8,3 +8,27 @@ fail and write tests that will check and prevent failure.
 You do not need to implement the actual functions after writing the tests but you may.
 
 '''
+# def add numbers and double
+# get two numbers from user, x, y
+# add two numbers together
+# multiply by 2
+# return print(result)
+
+def AddThenDouble(x, y):
+    pass
+
+import unittest
+
+class AddThenDoubleTest(unittest.TestCase):
+
+    def test_AddThenDouble(self):
+        self.assertEquals(AddThenDouble(5, 5), 20)
+        self.assertEquals(AddThenDouble(-1, 2), 2)
+        self.assertEquals(AddThenDouble(2.3, 1), 3.6)
+        with self.assertRaises(TypeError):
+            AddThenDouble("ten", 5)
+
+if __name__ == '__main__':
+    unittest.main()
+
+

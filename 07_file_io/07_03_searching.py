@@ -8,3 +8,19 @@ Start with a small folder to make it easy to check if your program is working co
 small folder name with a bigger folder. This program should work for any specified folder on your computer.
 
 '''
+import os
+
+list_of_jpg = []
+list_of_files = []
+target = ".jpg"
+
+folder = "/home/jonathan/Documents/photos"
+
+
+for i in os.listdir(folder):
+    if i.endswith(target):
+        list_of_jpg.append(i)
+    list_of_files.append(i)
+
+print(list_of_jpg)
+print(list_of_files)

@@ -3,6 +3,10 @@ Write a script that reads in the contents of words.txt and writes the contents i
 to a new file words_reverse.txt.
 '''
 
+import os
+os.chdir("/home/jonathan/Documents/CodingNomads/Labs/python_fundamentals/07_file_io")
+
+
 file = "/home/jonathan/Documents/CodingNomads/Labs/python_fundamentals/07_file_io/words.txt"
 
 with open(file, encoding='utf-8') as contents:

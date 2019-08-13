@@ -8,3 +8,10 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+try:
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("enter the second Number: "))
+    print(num1 / num2)
+except: TypeError
+    print("Cant divide by zero")
