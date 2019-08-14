@@ -14,10 +14,3 @@ for x in range(1, 11):
 
 print(my_dict)
 
-
-
-# method 2
-
-my_dict2 = {x: x*x for x in range(1, 11)}
-
-print(my_dict2)
