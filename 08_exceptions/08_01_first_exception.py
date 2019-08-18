@@ -11,5 +11,5 @@ This raises and exception that needs to be handled.
 try:
     list_ = ["hello world!"]
     print(list_[1])
-except: IndexError
-print("List out of range")
+except IndexError:
+    print("List out of range")

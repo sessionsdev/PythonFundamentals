@@ -13,5 +13,5 @@ try:
     num1 = int(input("Enter the first number: "))
     num2 = int(input("enter the second Number: "))
     print(num1 / num2)
-except: TypeError
+except ZeroDivisionError:
     print("Cant divide by zero")

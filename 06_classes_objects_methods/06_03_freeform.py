@@ -28,12 +28,15 @@ class Beer:
     def __str__(self):
         return (f"This beer is an {self.style} with an ABV of {self.abv}% from {self.origin}")
 
-
+    def __add__(self, other):
+        abv1 = self.abv
+        abv2 = other.abv
+        return abv1 + abv2
 
 
 
 class Dog:
-    def __init__(self, breed = "Poodle", weight = "35", color = "White"):
+    def __init__(self, breed = "Poodle", weight = 35, color = "White"):
         self.breed = breed
         self.weight = weight
         self.color = color
@@ -41,13 +44,7 @@ class Dog:
     def __str__(self):
         return (f"This dog is a {self.color} {self.breed} and it weighs {self.weight} lbs!")
 
-    def __add__(self):
-        pass
-    
 
-
-
-        
 
 class Drill:
     def __init__(self, diameter = 1, length = 12, material = "Concrete", machine = "SDS+"):
@@ -60,3 +57,7 @@ class Drill:
         return (f"This is a {self.diameter} by {self.length} drill for {self.material}.  Use a {self.machine} machine!")
 
 
+beer1 = Beer('IPA', 35, 'New York')
+beer2 = Beer('Lager', 10, 'Califonia')
+
+print(beer1 + beer2)
